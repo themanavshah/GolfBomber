@@ -12,6 +12,7 @@
 [Uu]ser[Ss]ettings/
 [Mm]emoryCaptures/
 [Rr]ecordings/
+.utmp/
 
 # Asset Bundles & Addressables ---------------------------------------------
 /[Aa]ssets/AssetStoreTools*

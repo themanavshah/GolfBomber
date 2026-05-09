@@ -442,6 +442,8 @@ ALVR (open-source) has experimental macOS builds that can sometimes stream PCVR-
 5. **Saving the scene.** `Cmd+S` saves the scene. Unsaved scene + crash = lost work.
 6. **Modifying a prefab instance vs the prefab itself.** Click "Open Prefab" or use "Apply Overrides" carefully — otherwise edits stay local to that instance.
 7. **`.meta` files.** Always commit them with their pair file. Never rename/delete from outside Unity.
+8. **FBX models can import a stowaway Camera or Light.** When 3D artists author a model, sometimes they include a reference camera or scene light. Unity imports these by default — and a stowaway Camera tagged MainCamera will steal rendering from your XR rig and produce flat 2D output in VR. **Always check Import Cameras / Import Lights are unticked** for non-camera/non-light assets. Inspector → Model tab on the FBX → uncheck → Apply. (We learned this the hard way with `golf_club.fbx` on 2026-05-09.)
+9. **Two cameras tagged MainCamera.** Even if you fix #8, if a previous instance dragged the rogue camera into the scene, it's still there. Search Hierarchy for `Camera`, confirm only one exists (under `XR Origin → Camera Offset → Main Camera`).
 
 ---
 
