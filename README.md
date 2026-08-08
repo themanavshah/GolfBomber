@@ -1,6 +1,10 @@
-# GolfBomber
+<p align="center">
+  <img src="docs/media/golfbomber-logo.png" alt="GolfBomber — Destroy. Score. Dominate." width="620">
+</p>
 
 A VR game where you start on a boat off the coast of a city, tee up grenade-style bomb balls, and drive them into skyscrapers to score points. Built for Meta Quest 3.
+
+![GolfBomber — teeing off toward the skyline](docs/media/golfbomber-hero.jpg)
 
 ## Tech Stack
 
